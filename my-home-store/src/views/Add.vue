@@ -21,7 +21,7 @@
     <div class="step">
       <p>Step 3: Select your product type</p>
       <p class="inputWrap">
-        <select v-model="productObj.type" placeholder="请选择">
+        <select v-model="productObj.type">
           <option value="0">衣服</option>
           <option value="1">鞋子</option>
           <option value="2">饰品</option>
@@ -70,7 +70,7 @@ export default {
       productObj: {
         title: '',
         tags: '',
-        type: '',
+        type: '0',
         img: '',
       },
       errWarning: {
