@@ -1,0 +1,27 @@
+// 全局样式配置
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// 主副色调
+@main-color: #F8F6F7;
+@minor-color: #44403B;
+// 字号
+@common-font: 14px;
+@side-font: 18px;
+
+// 按钮hover等通用 传参设置颜色
+.btn-common(@origin-color, @active-color) {
+  border: 1px solid @origin-color;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: @origin-color;
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    background-color: @active-color;
+    border-color: @active-color;
+  }
+}
